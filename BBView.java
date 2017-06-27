@@ -1,11 +1,28 @@
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.Color;
+import java.awt.Graphics;
 
-public class BBView implements MouseListener{
+import javax.swing.JPanel;
 
-	@Override
-	public void mouseClicked(MouseEvent e) {
-		// System.out.println(e);
-}
+public class BBView extends JPanel {
+
+	double height;
+	double velocity;
+	double visibleHeight;
+	
+	public BBView(double visibleHeight)
+	{
+		
+		this.visibleHeight = visibleHeight;
+		
+	}
+	
+	public void paintComponent(Graphics g)
+	{
+		
+		super.paintComponent(g);
+		
+		
+	}
 	
 }
+
