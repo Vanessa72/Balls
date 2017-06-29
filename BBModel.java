@@ -8,6 +8,12 @@ public class BBModel {
 //  double thrust;
 	final static double g = 9.81;
 	
+	private float ballRadius = 200; // Ball's radius
+	private float ballX = ballRadius + 50; // Ball's center (x, y)
+ 	private float ballY = ballRadius + 20; 
+ 	private float ballSpeedX = 3;   // Ball's speed for x and y
+ 	private float ballSpeedY = 2;
+	
 	public void reset(double height)
 	{
 		this.height = height;
@@ -39,7 +45,8 @@ public class BBModel {
 		int h = getHeight();
 		
 		g.setColor(Color.blue);
-		g.fillOval(1, 1, 1, 1); // mit koordinaten schreiben (height, width, radius)
+		g.fillOval((int) (ballX - ballRadius), (int) (ballY - ballRadius),
+	            (int)(2 * ballRadius), (int)(2 * ballRadius));
 		
 	}
 	
