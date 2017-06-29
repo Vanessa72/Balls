@@ -1,4 +1,7 @@
 
+import java.awt.Color;
+import java.awt.Graphics;
+
 public class BBModel {
 
 	double height, velocity;
@@ -26,4 +29,18 @@ public class BBModel {
 		else
 			return true;
 	}
+	
+	public void paintComponent(Graphics g)
+	{
+		
+		super.paintComponent(g);
+		
+		int w = getWidth();
+		int h = getHeight();
+		
+		g.setColor(Color.blue);
+		g.fillOval(1, 1, 1, 1); // mit koordinaten schreiben (height, width, radius)
+		
+	}
+	
 }
