@@ -55,12 +55,10 @@ public class BBControl implements MouseListener, Runnable, ActionListener {
 		}
 		
 		/** public void  run(), model {
-	            while (true) { // Execute one update step
-	               // Calculate the ball's new position
+	            while (true) {
 	               ballX += ballSpeedX;
 	               ballY += ballSpeedY;
-	               // Check if the ball moves over the bounds
-	               // If so, adjust the position and speed.
+	               
 	               if (ballX - ballRadius < 0) {
 	                  ballSpeedX = -ballSpeedX; // Reflect along normal
 	                  ballX = ballRadius; // Re-position the ball at the edge
@@ -68,7 +66,7 @@ public class BBControl implements MouseListener, Runnable, ActionListener {
 	                  ballSpeedX = -ballSpeedX;
 	                  ballX = BOX_WIDTH - ballRadius;
 	               }
-	               // May cross both x and y bounds
+	              
 	               if (ballY - ballRadius < 0) {
 	                  ballSpeedY = -ballSpeedY;
 	                  ballY = ballRadius;
