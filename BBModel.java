@@ -5,13 +5,13 @@ import java.awt.Graphics;
 public class BBModel {
 
 	double height, velocity;
-//  double thrust;
+	//  double thrust;
 	final static double g = 9.81;
 	
-	private float ballRadius = 200; // Ball's radius
-	private float ballX = ballRadius + 50; // Ball's center (x, y)
+	private float ballRadius = 200; 
+	private float ballX = ballRadius + 50; 
  	private float ballY = ballRadius + 20; 
- 	private float ballSpeedX = 3;   // Ball's speed for x and y
+ 	private float ballSpeedX = 3;   
  	private float ballSpeedY = 2;
 	
 	public void reset(double height)
